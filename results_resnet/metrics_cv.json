@@ -1,0 +1,8 @@
+{
+  "cv_auc_mean": 0.8113333333333332,
+  "cv_auc_std": 0.15163699343424672,
+  "cv_acc_mean": 0.7678571428571429,
+  "cv_acc_std": 0.13401187885209798,
+  "n_subjects": 39,
+  "cv": "RepeatedStratifiedKFold(5x5, seed=42)"
+}
