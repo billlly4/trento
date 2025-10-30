@@ -27,7 +27,7 @@ pip install torch torchvision scikit-learn pandas numpy nibabel matplotlib seabo
 ## 📁 Data
 
 - MRI volumes stored in `disc1/`  
-- Metadata file: `oasis_cross-sectional-5708aa0a98d82080.xlsx`  
+- Metadata file: `metadata/oasis_cross-sectional-5708aa0a98d82080.xlsx`  
 - Optional tissue segmentation files: `*_fseg.txt` (CSF / GM / WM volumes)
 
 Labeling rule:  
@@ -41,7 +41,7 @@ Labeling rule:
 ```python
 # in final.ipynb
 ROOT = Path("disc1")
-META_XLSX = Path("oasis_cross-sectional-5708aa0a98d82080.xlsx")
+META_XLSX = Path("metadata/oasis_cross-sectional-5708aa0a98d82080.xlsx")
 ```
 → Extract ResNet18 slice embeddings → save 512-D features → evaluate Logistic Regression (5×5 CV).
 
