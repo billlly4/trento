@@ -57,8 +57,8 @@ META = Path("oasis_cross-sectional-5708aa0a98d82080.xlsx")
 ## 📊 Results
 
 - Prints mean ± std of **ROC-AUC** and **Accuracy** (Repeated Stratified 5×5 CV).  
-- `final.ipynb` saves outputs in `results_resnet/`.  
-- `main.ipynb` displays a barplot comparing model AUCs.
+- `ResNet.ipynb` saves outputs in `results_resnet/`.  
+- `Classifier.ipynb` displays a barplot comparing model AUCs.
 
 ---
 
