@@ -2,8 +2,8 @@
 
 This repository contains two complementary pipelines for classifying **dementia from MRI scans** of the **OASIS-1** dataset.
 
-- **`final.ipynb` → ResNet18 embeddings + Logistic Regression**  
-- **`main.ipynb` → Tissue volumes (GM/WM/CSF) + Classical ML**
+- **`ResNet.ipynb` → ResNet18 embeddings + Logistic Regression**  
+- **`Classifier.ipynb` → Tissue volumes (GM/WM/CSF) + Classical ML**
 
 ---
 
@@ -11,8 +11,8 @@ This repository contains two complementary pipelines for classifying **dementia 
 
 | Notebook | Goal | Input | Model | Output |
 |-----------|------|--------|--------|---------|
-| `final.ipynb` | Extract deep 512-D embeddings from MRI slices using pretrained ResNet18 and classify dementia | `.nii` MRI volumes + metadata Excel | ResNet18 + Logistic Regression (5×5 CV) | `results_resnet/resnet_embeddings.csv`, metrics JSON |
-| `main.ipynb` | Parse tissue volumes from `_fseg.txt` and classify using engineered ratios + age | `*_fseg.txt` + metadata Excel | SVM / Logistic / RF (5×5 CV) | ROC-AUC comparison plot |
+| `ResNet.ipynb` | Extract deep 512-D embeddings from MRI slices using pretrained ResNet18 and classify dementia | `.nii` MRI volumes + metadata Excel | ResNet18 + Logistic Regression (5×5 CV) | `results_resnet/resnet_embeddings.csv`, metrics JSON |
+| `Classifier.ipynb` | Parse tissue volumes from `_fseg.txt` and classify using engineered ratios + age | `*_fseg.txt` + metadata Excel | SVM / Logistic / RF (5×5 CV) | ROC-AUC comparison plot |
 
 ---
 
